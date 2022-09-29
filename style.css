@@ -1,0 +1,151 @@
+header{
+    background: radial-gradient(circle farthest-corner at 100px 50px, #a10000, #540000);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu_item{
+    position: relative;
+    margin: 0 20px;
+    font-size: 120%;
+}
+a{
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0 40px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+}
+
+main{
+    padding: 20px 40px;
+}
+
+.preview_wrapper {
+    padding: 20px 0;
+    display: flex;
+}
+
+.image {
+    width: 50%;
+    width: fit-content;
+    margin-right: 50px;
+}
+
+.info {
+    width: 50%;
+}
+
+.text {
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.tablewrapper{
+    padding: 20px 0;
+    display:flex;
+    flex-direction: column;
+}
+
+table{
+    color: white;
+    width: 50%;
+    border-width: 1px; /* Толщина рамки */
+    border-style: dashed; /* Стиль рамки */
+    border-color: black;
+    border-radius: 5px;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #a10000, #540000);
+    border: black;
+}
+
+.table{
+    padding-top: 20xp;
+}
+
+th {
+    padding: 10px; 
+    border: 1px solid #000000;
+}
+
+td {
+    font-size: 0.8em;
+    padding: 5px 7px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.gallery-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    width: 31%;
+    height: 300px;
+    margin: 30px 0;
+    padding-bottom: 30px;
+}
+
+.footer {
+    background-color: #540000;
+    padding: 30px;
+}
+  
+.footer ul {
+    list-style: none;
+}
+  
+.footer-wrap {
+    text-align: left;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+}
+
