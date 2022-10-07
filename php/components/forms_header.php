@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <!-- Шапка -->
     <header id="header">
         <div class="wrapper">
             <div class="header__wrapper">

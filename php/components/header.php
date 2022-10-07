@@ -20,10 +20,18 @@
                             <?php echo '<li class="menu__item"><a href="#',$id_list[$i],'">',$menu_list[$i],'</a></li>' ?>
                             <?php endfor ?>
                             <li class="munu_item">
-                              <?php echo '<a href="./feedback.php">Связаться с нами</a>' ?>
+                              <a href=<?php
+                              $link = "./feedback.php";
+                              $link_name = "Связаться с нами";
+                              echo $link
+                              ?>><?= $link_name ?></a>
                             </li>
                             <li class="menu_item">
-                              <?php echo '<a href="./enter.php">Войти</a>'?>
+                            <a href=<?php
+                              $link = "./enter.php";
+                              $link_name = "Войти";
+                              echo $link
+                              ?>><?= $link_name ?></a>
                             </li>
                         </ul>
                     </nav>

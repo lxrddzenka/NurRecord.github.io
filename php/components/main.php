@@ -208,10 +208,9 @@
                     <h1 id="gallery">Галерея</h1>
                     <div class="gallery-wrapper">
                       <!-- <div class="gallery-item"> -->
-                      <?php for($i = 0; $i < count($cats_names); $i++): ?>
-          <div class="gallery__item">
-            <img class="gallery-image" src=<?php echo "../img/1",($i + 1),".jpg" ?> alt="cat_img" width="500" height="300" />
-            <p class="gallery__name"><?php echo $cats_names[$i] ?></p>
+                      <?php for($i = 0; $i < 6; $i++): ?>
+          <div class="gallery-item">
+            <img class="gallery-image" src=<?php echo "../img/",($i + 1),".jpg" ?> alt="car" width="500" height="300" />
           </div>
           <?php endfor ?>
                         <!-- <img

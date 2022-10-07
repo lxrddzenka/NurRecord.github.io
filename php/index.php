@@ -17,7 +17,6 @@ if($os == 0){
 
 $menu_list = ["Главная", "Таблица рекордов", "Галерея", "Контакты"];
 $id_list = ["main", "table", "gallery", "footer"];
-// $gallery_list = [""]
 ?>
 
 <?php require("components/header.php")?>
