@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <title>Nurburgring records</title> 
-    </head>
-        <body>
-            <header id="header">
-            <div class="wrapper">
-                <div class="header__wrapper">
-                    <div class="logo">NurRecords</div>
-                    <nav class="nav">
-                        <ul class="menu">
-                            <li class="menu_item"><a href = "#main">Главная</a></li>
-                            <li class="menu_item"><a href = "#table">Таблица рекордов</a></li>
-                            <li class="menu_item"><a href = "#gallery">Галерея</a></li>
-                            <li class="menu_item"><a href = "#footer">Контакты</a></li>
-                            <li class="munu_item">
-                              <a href="./feedback.html">Связаться с нами</a>
-                            </li>
-                            <li class="menu_item">
-                              <a href="./enter.html">Войти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    </div>
-                </div>
-            </header>
-            <main>
+<main>
                 <Section class="intro">
                     <div class="wrapper">
                         <div class="preview_wrapper">
                             <div class="image">
-                                <img src="./img/map.jpg" alt="map" width="800" height="500" />
+                            <?php echo '<img src="../img/',$img1,'.jpg" alt="map" width="800" height="500" />' ?>
                             </div>
                             <div class="info">
                                 <h1>Рекорды времени круга на Нюрбургринге Нордшляйфе</h1>
@@ -240,8 +207,14 @@
                   <div class="wrapper">
                     <h1 id="gallery">Галерея</h1>
                     <div class="gallery-wrapper">
-                      <div class="gallery-item">
-                        <img
+                      <!-- <div class="gallery-item"> -->
+                      <?php for($i = 0; $i < count($cats_names); $i++): ?>
+          <div class="gallery__item">
+            <img class="gallery-image" src=<?php echo "../img/1",($i + 1),".jpg" ?> alt="cat_img" width="500" height="300" />
+            <p class="gallery__name"><?php echo $cats_names[$i] ?></p>
+          </div>
+          <?php endfor ?>
+                        <!-- <img
                           class="gallery-image"
                           src="./img/1.jpg"
                           alt="car_img"
@@ -292,24 +265,9 @@
                           alt="car_img"
                           width="500"
                           height="300"
-                        />
+                        /> -->
                       </div>
                     </div>
                   </div>
                 </section>
             </main>
-            <footer class="footer" id="footer">
-              <div class="wrapper">
-                <div class="footer-wrap">
-                  <div>
-                    <ul class="footer-info">
-                      <li class="footer-info_item" style="color: white">Стрюк Евгений Михайлович</li>
-                      <li class="footer-info_item" style="color: white">jenya.stryuk@yandex.ru</li>
-                      <li class="footer-info_item" style="color: white">+7 (916)-368-78-48</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </footer>
-        </body>
-</html>
