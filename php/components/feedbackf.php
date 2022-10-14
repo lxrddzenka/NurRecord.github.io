@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-      <form action = "../home.php" method="post">
+      <form action = "./home.php" method="post">
 
         <label for="fio">ФИО</label>
         <input type="text" id="fio" name="fio" value = <?php 
@@ -61,7 +61,7 @@
         </div>
 
         <div class="btn">
-          <input type="submit">Отправить</input>
+          <button type="submit">Отправить</button>
         </div>
       </form>
     </div>

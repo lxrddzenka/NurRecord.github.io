@@ -160,13 +160,14 @@ td {
     padding: 50px 80px;
     max-width: 700px;
     text-align: center;
-    background-color: #fff;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #a10000, #540000);
     box-shadow: 0 0 5px rgb(219, 219, 219);
+    color: white;
   }
   
   
   .response p {
-    color: #000;
+    color: white;
     margin: 15px 0;
   }
   
@@ -176,6 +177,7 @@ td {
     min-height: 200px;
     font-size: 16px;
     resize: none;
+    color: white;
   }
   
   
@@ -192,9 +194,9 @@ td {
   }
   
   .error {
-    color: red;
+    color: white;
   }
   
   .success {
-    color: rgb(103, 255, 103)
+    color: white;
   }

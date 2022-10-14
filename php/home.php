@@ -1,11 +1,11 @@
 <?php 
-$title = "Написать отзыв"; // -- Название страницы
+$title = "NurRecords";
 
-$today = date("m.d.y");  // -- Текущий год, месяц, день
-$time = date("G:i:s"); // -- Текущее время
+$today = date("m.d.y"); 
+$time = date("G:i:s"); 
 
-$menu_list = ["Главная", "Связаться с нами", "Войти"]; // -- Список меню
-$pages_list = ["index", "feedback", "login"]; // -- Страницы
+$menu_list = ["Главная", "Связаться с нами", "Войти"]; 
+$pages_list = ["index", "feedback", "login"]; 
 
 
 $login = "Eugene";
@@ -19,10 +19,10 @@ $password = "123";
 
         if (isset($_POST['typeOfselect'])) {
          
-            echo '<h1>Ваш запрос отправлен!</h1> <p> Здравствуйте, '.$_POST['fio'].'</p>'; //выводим ФИО
-            if ($_POST['typeOfselect'] == 'Предложение'){ //проверяем тип обращения
+            echo '<h1>Ваш запрос отправлен!</h1> <p> Здравствуйте, '.$_POST['fio'].'</p>'; 
+            if ($_POST['typeOfselect'] == 'Предложение'){ 
                     echo '<p>Спасибо за ваше <strong>предложение:</strong></p>';
-                    echo '<textarea readonly disabled>'.$_POST['message'].'</textarea>';//вывод текста сообщения
+                    echo '<textarea readonly disabled>'.$_POST['message'].'</textarea>';
             } else {
                     echo '<p>Мы рассмотрим Вашу <strong>жалобу</strong>:</p>';
                     echo '<textarea readonly disabled>'.$_POST['message'].'</textarea>';
@@ -40,11 +40,7 @@ $password = "123";
                 echo "<h1 class='error'>Неверный логин или пароль!</h1>";
             }
         }
-        ?>
-
-        
-
-        
+        ?>        
     </div>
 </div>
 <?php require("components/footer.php")?>
