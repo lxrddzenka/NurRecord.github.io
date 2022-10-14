@@ -31,7 +31,7 @@ $password = "123";
 
             if (isset($_POST['file_name']) & $_POST['file_name'] != '') echo '<p>Вы приложили следующий файл: ' .$_POST['file_name'].'</p>';
 
-            echo '<a href="feedback.php?F='.$_POST['fio'].'&E='.$_POST['email'].'&M='.$_POST['message'].'"><button class="btn">Заполнить снова</button></a>';
+            echo '<a href="feedback.php?F='.$_POST['fio'].'&E='.$_POST['email'].'&M='.$_POST['message'].'&R='.$_POST['radioValue'].'"><button class="btn">Заполнить снова</button></a>';
 
         } else {
             if (($_POST["login"] == $login) && ($_POST["password"] == $password)) {
@@ -43,5 +43,6 @@ $password = "123";
         ?>        
     </div>
 </div>
+
 <?php require("components/footer.php")?>
 

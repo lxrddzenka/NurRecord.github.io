@@ -22,13 +22,25 @@
 
         <label for="">Как нас нашли?</label>
         <div class="input-wrapper">
-          <input type="radio" id="r1" value="На работе" name="radioValue" />
+          <input type="radio" id="r1"  value="На работе" name="radioValue" 
+          <?php if(isset($_GET["R"]) &&  $_GET["R"] == "На работе") {
+            echo "checked";
+          } 
+          ?> />
           <label for="r1">На работе</label>
 
-          <input type="radio" id="r2" value="От друзей" name="radioValue" />
+          <input type="radio" id="r2" value="От друзей" name="radioValue" 
+          <?php if(isset($_GET["R"]) && $_GET["R"] == "От друзей") {
+            echo "checked";
+          } 
+          ?>  />
           <label for="r2">От друзей</label>
 
-          <input type="radio" id="r3" value="В объявлении" name="radioValue" />
+          <input type="radio" id="r3" value="В объявлении" name="radioValue" 
+          <?php if(isset($_GET["R"]) && $_GET["R"] == "В объявлении") {
+            echo "checked";
+          } 
+          ?> />
           <label for="r3">В объявлении</label>
         </div>
 
