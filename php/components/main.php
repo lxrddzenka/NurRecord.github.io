@@ -3,7 +3,7 @@
                     <div class="wrapper">
                         <div class="preview_wrapper">
                             <div class="image">
-                            <?php echo '<img src="../img/',$img1,'.jpg" alt="map" width="800" height="500" />' ?>
+                            <?php echo '<img src="./img/',$img1,'.jpg" alt="map" width="800" height="500" />' ?>
                             </div>
                             <div class="info">
                                 <h1>Рекорды времени круга на Нюрбургринге Нордшляйфе</h1>
@@ -210,7 +210,7 @@
                       <!-- <div class="gallery-item"> -->
                       <?php for($i = 0; $i < 6; $i++): ?>
           <div class="gallery-item">
-            <img class="gallery-image" src=<?php echo "../img/",($i + 1),".jpg" ?> alt="car" width="500" height="300" />
+            <img class="gallery-image" src=<?php echo "./img/",($i + 1),".jpg" ?> alt="car" width="500" height="300" />
           </div>
           <?php endfor ?>
                         <!-- <img

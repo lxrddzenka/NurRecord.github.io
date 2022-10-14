@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="./style.css"/>
         <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
